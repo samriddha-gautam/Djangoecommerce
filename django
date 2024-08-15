@@ -1,0 +1,17 @@
+Creating django project:
+py -m django startproject <ProjName>
+django-admin startproject my project
+cd myproject
+
+start development server:
+python manage.py runserver
+py manage.py startapp students
+
+
+python manage.py makemigrations
+-> creates a sql query to create or update
+
+python manage.py migrate
+->this applied the sql query created above
+
+puthon manage.py createsuperuser creates a super admin

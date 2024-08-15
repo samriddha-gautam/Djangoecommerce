@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'createStudent' %}" method="post">
+        {% csrf_token %}
+        <!-- <br>
+        <label for="rollNO">Roll No:</label>
+        <input type="number" name="rollNo" id="rollNO">
+         <br>   
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+         <br>   
+        <label for="address">Address:</label>
+        <input type="test" name="address" id="address">
+            <br>
+        <label for="date">Date of Birth:</label>
+        <input type="date" name="DOB" id="DOB">
+        <select name="college" id="college">
+            {% for c in college %}
+                <option value="{{c.id}}">{{c.name}}</option>
+            {% endfor %}    
+        </select>
+       <br> -->
+       {{studentForm.as_p}}
+       <button type="submit">Submit</button> 
+    </form>
+</body>
+</html>
